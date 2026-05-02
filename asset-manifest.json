@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/liftlog/static/css/main.3d4d5bf8.css",
+    "main.js": "/liftlog/static/js/main.d8c65ec0.js",
+    "index.html": "/liftlog/index.html",
+    "main.3d4d5bf8.css.map": "/liftlog/static/css/main.3d4d5bf8.css.map",
+    "main.d8c65ec0.js.map": "/liftlog/static/js/main.d8c65ec0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d4d5bf8.css",
+    "static/js/main.d8c65ec0.js"
+  ]
+}

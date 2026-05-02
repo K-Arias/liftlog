@@ -1,13 +1,250 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070b14;
+  color: #e6edf3;
+}
+
+
+/* nav */
+
+.nav {
+  background: #0c1324;
+  padding: 18px 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #1f2a44;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 25px;
+  color: #4da3ff;
+  letter-spacing: .5px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.navLinks a {
+  color: #c9d7ff;
+  text-decoration: none;
+  background: #121d36;
+
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.navLinks a:hover {
+  background: #1d2d56;
+  color: white;
+}
+
+
+/* page stuff */
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 18px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 34px;
+  color: #4da3ff;
+}
+
+h3 {
+  color: #dbe8ff;
+}
+
+
+/* cards */
+
+.hero,
+.card {
+  background: #0f172d;
+  border: 1px solid #1f2a44;
+  border-radius: 14px;
+
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+.hero p,
+.card p {
+  color: #a8b3cf;
+}
+
+
+/* forms */
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  background: #090f1f;
+  color: #e6edf3;
+
+  border: 1px solid #2b3a63;
+  border-radius: 9px;
+
+  padding: 12px;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4da3ff;
+}
+
+textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #dbe8ff;
+}
+
+.smallGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+/* buttons */
+
+.buttonRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.mainBtn,
+.secondBtn,
+.badBtn {
+  border: none;
+  border-radius: 9px;
+
+  padding: 11px 15px;
+  cursor: pointer;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.mainBtn {
+  background: #4da3ff;
+  color: #07101f;
+}
+
+.mainBtn:hover {
+  background: #74b8ff;
+}
+
+.secondBtn {
+  background: #17264a;
+  color: #c9d7ff;
+}
+
+.secondBtn:hover {
+  background: #22376a;
+  color: white;
+}
+
+.badBtn {
+  background: #7c2020;
+  color: white;
+}
+
+.badBtn:hover {
+  background: #a42b2b;
+}
+
+.fullBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+
+/* workout cards */
+
+.miniCard {
+  border: 1px solid #2b3a63;
+  border-radius: 12px;
+
+  padding: 14px;
+  margin-top: 12px;
+
+  background: #091020;
+}
+
+.miniCard h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #4da3ff;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: start;
+}
+
+.oldBox {
+  background: #17264a;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.oldBox p {
+  margin: 4px 0;
+}
+
+.tinyText {
+  color: #7f8db3;
+  font-size: 14px;
+}
+
+
+/* phone size */
+
+@media (max-width: 650px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .smallGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardTop {
+    flex-direction: column;
+  }
 }

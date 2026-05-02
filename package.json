@@ -1,5 +1,6 @@
 {
   "name": "gym-tracker",
+  "homepage": "https://K-Arias.github.io/liftlog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
